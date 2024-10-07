@@ -1,0 +1,84 @@
+3 start
+loc:210   loc2:0  nine:9     three:3  one:1  four:4    five:5   seven:7 zero:0 instruction:0 two:2 
+
+start:7 loc location
+      7 loc loc2
+      2 loc2 one loc2
+
+
+
+check1:7 location:0 instruction
+  4 instruction nine halt
+  4 instruction three jump
+  4 instruction one add/sub
+  4 instruction two add/sub 
+  4 instruction four equal/less
+  4 instruction five equal/less
+  4 instruction seven copy
+  4 instruction zero put
+
+halt:9
+
+jump:1 one location next
+     1 loc2 next:0 location
+     3 check1
+
+add/sub:1 one location num1
+    1 one num1 num2
+    1 one num2 sum
+    1 num1:0 loc2 num1_value
+    1 num2:0 loc2 num2_value
+    1 sum:0  loc2 sum_copy
+    4 instruction two yes4  
+    add:1 num1_value:0 
+        num2_value:0 
+        sum_copy:0
+    1 four location location
+    3 check1
+      yes4:7 two add
+           3 add
+
+
+equal/less:1 one location left
+      1 one left right
+      1 one right result
+      1 left:0 loc2 left_value
+      1 right:0 loc2 
+      right_value
+      4 instruction five yes5
+      eq:4 left_value:0 
+      right_value:0 yes
+      1 four location location
+      3 check1
+   yes:1 result:0 loc2 location
+       3 check1
+   yes5:7 five eq
+         3 eq
+      
+
+
+copy:1 one location source
+     1 one source destination 
+     1 source:0 loc2 
+     source_value
+     1 destination:0 loc2 
+     dest_value
+     7 source_value:0 
+     dest_value:0
+     1 three location location
+     3 check1
+
+
+put:1 one location value
+    1 one value cell
+    7 cell:0 cell_copy
+    7 value:0 value_copy
+    1 loc2 cell_copy cell_copy
+    0 value_copy:0 cell_copy:0 
+    1 three location location
+    3 check1
+
+
+
+n1:3 9 12 13 14 15 16 0 5 3 4 18
+7 4 8 3 21 7 3 8 5 8 5 28 7 5 8 5 8 6 35 7 6 8 5 8 7 42 7 7 8 9
