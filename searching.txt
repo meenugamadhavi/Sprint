@@ -1,0 +1,14 @@
+3 start
+list_loc:38 length:5 target:20
+result:0
+start:7 list_loc location
+7 length length_copy
+lc<1:5 length_copy one halt
+check:4 target address:location yes
+1 one address address
+2 length_copy one length_copy
+3 lc<1
+yes:7 one result halt:9
+one:1 length_copy:0
+location:0
+e1:10 200 30 40 50
