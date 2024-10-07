@@ -1,0 +1,19 @@
+3 5 0 1 
+7 3 n1
+2 n1 one num2
+7 num2 var 
+4 3 zero stop
+4 3 one stop
+5 num2 one 37
+1 sum n1 sum
+2 num2 one num2
+3 23
+7 sum n1
+7 zero sum
+4 var one 56
+2 var one var
+7 var num2 
+3 23
+7 n1 4 
+stop:9 sum:0 n1:0
+var:0 zero:0 num2:0 one:1 
