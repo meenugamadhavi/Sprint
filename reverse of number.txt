@@ -1,0 +1,21 @@
+3 start
+number:101 n:0 result:0 rev:0 quotient:0 sum:0 one:1 zero:0
+counter:0 ten:10
+start:7 number n
+n<10:5 n ten yes
+2 n ten n
+1 quotient one quotient
+3 n<10
+yes:4 counter ten yes2
+1 sum rev sum
+1 counter one counter
+3 yes
+yes2:7 sum rev
+7 zero sum
+1 rev n rev
+7 quotient n
+n=0:4 n zero halt
+7 zero quotient
+7 zero counter
+3 n<10         
+halt:9
