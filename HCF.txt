@@ -1,0 +1,14 @@
+3 start
+a:10 b:1
+result:0
+a1:0 b1:0 
+start:7 a a1
+7 b b1
+eq:4 a1 b1 yes
+5 a1 b1 yes2
+2 a1 b1 a1
+3 eq
+yes2:2 b1 a1 b1 
+3 eq
+yes:7 a1 result
+9
