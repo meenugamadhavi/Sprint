@@ -1,0 +1,24 @@
+3 start seq_loc:60
+seq_len:3 cyc_loc:70 
+cyc_len:8
+start:7 seq_loc seq_location
+      7 cyc_loc cyc_location
+      4 seq_len zero stop
+check:5 counter1 seq_len yes
+      7 zero counter1
+      7 seq_loc seq_location
+      3 check
+yes:5 counter2 cyc_len yes2
+stop:9
+    yes2:7 seq_location:0
+          cyc_location:0
+         1 one seq_location 
+         seq_location 
+         1 one cyc_location 
+         cyc_location 
+     1 one counter1 counter1
+     1 one counter2 counter2
+     3 check
+9
+counter1:0 counter2:0 one:1 zero:0
+seq:1 2 3
