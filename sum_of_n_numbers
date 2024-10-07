@@ -1,0 +1,9 @@
+3 start
+number:6 n:0 one:1 
+result:0
+start:7 number n
+n<1:5 n one halt
+1 n result result
+2 n one n
+3 n<1 
+halt:9
